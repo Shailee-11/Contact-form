@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .gender-label {
+      margin-top: 10px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="reset"] {
+      background-color: #f44336;
+      margin-left: 10px;
+    }
+    .submit-btn{ 
+        background-color: rgb(7, 113, 155);
+        width: 70px;
+        height: 40px;
+        border-radius: 5px;
+        color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Customer Survey form</h1>
+    <form id="surveyForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+
+      <label >Is this the first time you are using our product?</label>
+      <label>
+        <input type="radio" > yes
+      </label>
+      <label >
+        <input type="radio" > no
+      </label>
+
+      <label>would you suggets to your friends and colleague?</label>
+      <label>
+        <input type="radio" > yes
+      </label>
+      <label>
+        <input type="radio" > no
+      </label>
+
+      <label>How satisfied are you with your company?</label>
+      <label >
+        <input type="radio" > Satisfied 
+      </label>
+      <label>
+        <input type="radio" >Unsatisfied
+      </label>
+      <label>How satisfied are you with your company?</label>
+      <input type="text" value="">
+      </textarea>
+
+      <button class="submit-btn"> submit</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
